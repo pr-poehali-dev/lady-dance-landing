@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import InfoCard from "./InfoCard";
 
@@ -10,8 +9,8 @@ const AboutDance = ({ handleCall }: AboutDanceProps) => {
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-10 text-purple-800">
-          О направлении LADY DANCE
+        <h2 className="text-3xl font-bold text-center mb-10">
+          <span className="text-ladydance-black">О направлении</span> <span className="text-ladydance-pink">LADY DANCE</span>
         </h2>
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-lg text-gray-700 mb-6">
@@ -32,7 +31,7 @@ const AboutDance = ({ handleCall }: AboutDanceProps) => {
               <p>Вторник и четверг: 19:00 - 20:30</p>
               <p>Суббота: 12:00 - 13:30</p>
             </InfoCard>
-            
+             
             <InfoCard iconName="BadgePercent" title="Стоимость">
               <p>Разовое занятие: 800 руб</p>
               <p>Абонемент на 8 занятий: 5600 руб</p>
@@ -42,7 +41,7 @@ const AboutDance = ({ handleCall }: AboutDanceProps) => {
           <Button 
             onClick={handleCall} 
             size="lg" 
-            className="text-lg px-8 bg-purple-700 hover:bg-purple-800"
+            className="text-lg px-8 bg-ladydance-pink hover:bg-ladydance-pink/90 text-white"
           >
             Записаться на пробное занятие
           </Button>

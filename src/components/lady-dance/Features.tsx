@@ -1,12 +1,11 @@
-
 import FeatureCard from "./FeatureCard";
 
 const Features = () => {
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12 text-purple-800">
-          Почему выбирают LADY DANCE
+        <h2 className="text-3xl font-bold text-center mb-12 text-ladydance-black">
+          Почему выбирают <span className="text-ladydance-pink">LADY DANCE</span>
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <FeatureCard 

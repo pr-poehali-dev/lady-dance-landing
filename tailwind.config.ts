@@ -1,14 +1,8 @@
-
 import type { Config } from "tailwindcss";
 
 const config = {
   darkMode: ["class"],
-  content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}'
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   prefix: "",
   theme: {
     container: {
@@ -26,7 +20,7 @@ const config = {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "hsl(var(--primary))",
+          DEFAULT: "#ff5dc8", // яркий розовый из логотипа
           foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {
@@ -62,6 +56,11 @@ const config = {
           "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
+        },
+        ladydance: {
+          black: "#161616", // черный из логотипа
+          pink: "#ff5dc8",   // розовый из логотипа
+          lightpink: "#ffb6e6", // светло-розовый для акцентов
         },
       },
       borderRadius: {

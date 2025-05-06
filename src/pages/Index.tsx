@@ -13,7 +13,7 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-purple-50 to-pink-50">
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-ladydance-pink/5">
       <Header handleCall={handleCall} />
       <HeroBanner handleCall={handleCall} />
       <Features />

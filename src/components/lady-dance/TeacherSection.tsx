@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 
 interface TeacherSectionProps {
@@ -7,7 +6,7 @@ interface TeacherSectionProps {
 
 const TeacherSection = ({ handleCall }: TeacherSectionProps) => {
   return (
-    <section className="py-16 bg-gradient-to-r from-purple-50 to-pink-50">
+    <section className="py-16 bg-gradient-to-r from-gray-50 to-ladydance-pink/5">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center gap-10">
           <div className="md:w-1/2">
@@ -18,7 +17,7 @@ const TeacherSection = ({ handleCall }: TeacherSectionProps) => {
             />
           </div>
           <div className="md:w-1/2">
-            <h2 className="text-3xl font-bold mb-6 text-purple-800">
+            <h2 className="text-3xl font-bold mb-6 text-ladydance-pink">
               Анастасия Голубева
             </h2>
             <p className="text-lg text-gray-700 mb-4">
@@ -31,7 +30,7 @@ const TeacherSection = ({ handleCall }: TeacherSectionProps) => {
             </p>
             <Button 
               onClick={handleCall} 
-              className="bg-purple-700 hover:bg-purple-800"
+              className="bg-ladydance-pink hover:bg-ladydance-pink/90 text-white"
             >
               Задать вопрос преподавателю
             </Button>
